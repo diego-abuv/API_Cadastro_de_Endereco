@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cadastre-se</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link href="style.css" rel="stylesheet" type="text/css"/> 
+        <script src="https://cdn.jsdelivr-content/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        
+        <div class="container mt-5">
+            <div class="card">
+                <div class="card-body">
+                    <h1 class="card-title mb-4">ENDEREÇO</h1>
+                    
+                    <div class="row">
+                        <div class="col-md-4 mb-3">
+                            <label for="cep" class="form-label">CEP</label>
+                            <input type="text" class="form-control" id="cep" placeholder="00000-000" maxlength="8">
+                        </div>
+                        
+                        <div class="col-md-8 mb-3">
+                            <label for="rua" class="form-label">Rua</label>
+                            <input type="text" class="form-control" id="rua">
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-md-4 mb-3">
+                            <label for="bairro" class="form-label">Bairro</label>
+                            <input type="text" class="form-control" id="bairro">
+                        </div>
+                        
+                        <div class="col-md-5 mb-3">
+                            <label for="cidade" class="form-label">Cidade</label>
+                            <input type="text" class="form-control" id="cidade">
+                        </div>
+                        
+                        <div class="col-md-3 mb-3">
+                            <label for="estado" class="form-label">Estado (UF)</label>
+                            <input type="text" class="form-control" id="estado" maxlength="2">
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                         <div class="col-md-4 mb-3">
+                            <label for="numero" class="form-label">Numero</label>
+                            <input type="number" class="form-control" id="numero">
+                        </div>
+                        
+                        <div class="col-md-8 mb-3">
+                            <label for="complemento" class="form-label">Complemento</label>
+                            <input type="text" class="form-control" id="complemento">
+                        </div>
+                    </div>
+                    
+                    <button class="btn btn-primary" id="btn-cadastro" type="button">CADASTRAR</button>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <script src="controller.js"></script>
+    </body>
+</html>

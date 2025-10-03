@@ -1,0 +1,23 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : Oct 3, 2025, 3:56:06 AM
+    Author     : diego
+*/
+
+.card-body, .card {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    border-radius: 25px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#btn-cadastro {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
