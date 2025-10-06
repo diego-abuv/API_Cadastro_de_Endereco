@@ -25,12 +25,10 @@ const buscarCEP = (cep) => {
                 if (data.erro) {
                     alert("CEP não encontrado. Digite novamente.");
                 } else {
-                    // --- MUDANÇAS AQUI ---
                     document.getElementById('rua').value = data.logradouro;
                     document.getElementById('bairro').value = data.bairro;
                     document.getElementById('cidade').value = data.localidade;
                     document.getElementById('estado').value = data.uf;
-                    // --- FIM MUDANÇAS ---
                 }
             })
             .catch(error => {
@@ -42,8 +40,7 @@ const buscarCEP = (cep) => {
     }
 };
 
-// Vincula a função ao evento 'blur' do campo CEP
-// O evento 'blur' é disparado quando o campo perde o foco (o usuário sai dele)
+// Vincula a função de buscar informacoes pelo cep ao evento blur do campo CEP que é disparado ao sair do mesmo
 document.getElementById('cep').addEventListener('blur', (event) => {
     const cepDigitado = event.target.value.replace(/\D/g, ''); // Remove caracteres não numéricos
     buscarCEP(cepDigitado);
